@@ -32,3 +32,8 @@ body{
     background-color: argb(0,0,0);
     border: 10px solid #e29ea8;
 }
+
+.start{
+    background: #1d3f3a;
+    color: white;
+}
