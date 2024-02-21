@@ -5,6 +5,7 @@ body{
     height: 100vh;
     width: 100vw;
     margin: 0px;
+    background-image: url("../img/BackLight.png");
     overflow: hidden;
 }
 
