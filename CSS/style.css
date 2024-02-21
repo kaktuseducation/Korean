@@ -27,8 +27,8 @@ body{
 }
 
 .rectangle{
-    width: 500px; 
-    height: 100px; 
+    width: 1000px; 
+    height: 500px; 
     background-color: argb(0,0,0);
     border: 15px solid #e2c0c5;
 }
