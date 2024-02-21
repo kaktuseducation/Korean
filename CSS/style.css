@@ -5,3 +5,14 @@ body {
     background-color: #101012;
     color: #101012;
 }
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 3vh;
+}
+
