@@ -7,6 +7,9 @@ body{
     margin: 0px;
     background-image: url("../IMG/BackDark.jpg");
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header{
@@ -24,11 +27,8 @@ body{
 }
 
 .rectangle{
-    position: absolute;
     width: 500px; 
     height: 100px; 
     background: #e2c0c5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
