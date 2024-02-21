@@ -34,6 +34,13 @@ body{
 }
 
 .start{
-    background: #1d3f3a;
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 80px;
     color: white;
+    background: #1d3f3a;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
