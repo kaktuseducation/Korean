@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title> Korean </title>
+        <link rel = "stylesheet" type = "text/css" href = "css/font.css">
+        <link rel = "stylesheet" href = "css/index.css">
+    </head>
+    
+    <body link = "#d4a174" vlink = "#d4a174" alink = "#d4a174">
+        <div class = "header"> 
+            <p> Korean </p>
+        </div>
 
+        <div class = "develop">
+            <p align = "center"> Строка поиска находится в разработке. <br>
+            Пожалуйста, воспользуйтесь <a href = "list.html"> списком </a> команд для поиска.</p>
+        </div>
+
+        <form> 
+          <input type = "text" class = "search" name = "t" placeholder = "Search here!">
+          <input type = "submit" class = "submit" value = "Search">
+        </form>
+        
+        <script>
+            function FontSize() {
+                header = document.querySelector(".header");
+                develop = document.querySelector(".develop");
+                var vh = window.innerHeight/100;
+                var vw = window.innerWidth/100;
+                hsize = Math.min(7*vh, 10*vw)
+                bsize = Math.min(4*vh, 5*vw)
+                header.style.fontSize = hsize + 'px';
+                develop.style.fontSize = bsize + 'px';
+            }
+                        
+            window.addEventListener('resize', FontSize);
+            FontSize();
+            
+        </script>
+        
+    </body>
+    
+</html>
