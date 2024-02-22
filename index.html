@@ -21,11 +21,14 @@
          <script>
             function FontSize() {
                 header = document.querySelector(".header");
+                rectangle = document.querySelector(".rectangle");
                 var vh = window.innerHeight/100;
                 var vw = window.innerWidth/100;
                 hsize = Math.min(7*vh, 10*vw)
                 bsize = Math.min(4*vh, 5*vw)
                 header.style.fontSize = hsize + 'px';
+                rectangle.width = bsize + 'px';
+                rectangle.height = bsize + 'px';
             }
                         
             window.addEventListener('resize', FontSize);
