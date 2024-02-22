@@ -18,6 +18,25 @@
              <button type = "start"> НАЧАТЬ </button>
          </div>
 
+         <script>
+            function FontSize() {
+                header = document.querySelector(".header");
+                rectangle = document.querySelector(".rectangle");
+                start = document.querySelector(".start");
+                var vh = window.innerHeight/100;
+                var vw = window.innerWidth/100;
+                hsize = Math.min(7*vh, 10*vw)
+                bsize = Math.min(4*vh, 5*vw)
+                header.style.fontSize = hsize + 'px';
+                rectangle.style.fontSize = bsize + 'px';
+                start.style.fontSize = bsize + 'px';
+            }
+                        
+            window.addEventListener('resize', FontSize);
+            FontSize();
+            
+        </script>
+
     </body>
     
 </html>
