@@ -42,7 +42,7 @@ body{
     font-family: "Garamond";
     font-size: 80px;
     text-color: white;
-    border: none;
+    border-style: solid;
     width: 100px;
     height: 100px;
     background: #1d3f3a;
