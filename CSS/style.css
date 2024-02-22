@@ -15,7 +15,6 @@ body{
 .header{
     position: absolute;
     font-family: "Garamond";
-    font-size: 80px;
     color: white;
     top: 20%;
     left: 0;
@@ -41,10 +40,10 @@ body{
     position: absolute;
     font-family: "Garamond";
     font-size: 300px;
-    text-color: white;
+    color: white;
     border-style: solid;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     background: #1d3f3a;
     top: 30%;
     display: flex;
