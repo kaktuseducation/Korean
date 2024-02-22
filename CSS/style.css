@@ -41,7 +41,8 @@ body{
     position: absolute;
     font-family: "Garamond";
     font-size: 80px;
-    color: white;
+    text-color: white;
+    border: none;
     width: 100px;
     height: 100px;
     background: #1d3f3a;
