@@ -29,6 +29,8 @@ body{
     background-color: argb(0,0,0);
     border: 1vh solid #e29ea8;
     display: flex;
+    width: 20vw;
+    height: 10vh;
     justify-content: center;
     align-items: center;
 }
@@ -42,6 +44,8 @@ body{
     background: #1d3f3a;
     top: 42%;
     display: flex;
+    width: 5vw;
+    height: 3vh;
     justify-content: center;
     align-items: center;
 }
