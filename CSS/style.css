@@ -43,8 +43,8 @@ body{
     box-shadow: 0vh 0vh 15vh rgba(226, 158, 168);
     border-radius: 10%;
     display: flex;
-    width: 10vw;
-    height: 3vh;
+    width: 15vw;
+    height: 9vh;
     justify-content: center;
     align-items: center;
 }
