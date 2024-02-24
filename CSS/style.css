@@ -37,7 +37,7 @@ body{
 .start{
     position: absolute;
     font-family: "Garamond";
-    font-size: 300px;
+    font-size: 10vh;
     color: white;
     border: 1vh solid #1d3f3a;
     background: #1d3f3a;
