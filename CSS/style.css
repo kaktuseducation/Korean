@@ -29,8 +29,8 @@ body{
     background-color: argb(0,0,0);
     border: 1vh solid #e29ea8;
     display: flex;
-    width: 20vw;
-    height: 10vh;
+    width: 40vw;
+    height: 20vh;
     justify-content: center;
     align-items: center;
 }
@@ -38,7 +38,7 @@ body{
 .start{
     position: absolute;
     font-family: "Garamond";
-    font-size: 10vh;
+    font-size: 5vh;
     color: white;
     border: 1vh solid #1d3f3a;
     background: #1d3f3a;
