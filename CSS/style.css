@@ -30,7 +30,7 @@ body{
     width: 35vw; 
     height: 22vh; 
     background-color: argb(0,0,0);
-    border: 10% solid #e29ea8;
+    border: 10vh solid #e29ea8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ body{
     font-family: "Garamond";
     font-size: 300px;
     color: white;
-    border-style: 10% solid;
+    border: 10vh solid;
     width: 20vw;
     height: 10vh;
     background: #1d3f3a;
