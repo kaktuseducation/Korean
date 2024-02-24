@@ -29,8 +29,8 @@ body{
     background-color: argb(0,0,0);
     border: 1vh solid #e29ea8;
     display: flex;
-    width: 45vw;
-    height: 25vh;
+    width: 60vw;
+    height: 40vh;
     align-items: center;
 }
 
