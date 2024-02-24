@@ -40,6 +40,7 @@ body{
     top: 13vh;
     border: 1vh solid #1d3f3a;
     background: #1d3f3a;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
