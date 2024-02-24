@@ -40,7 +40,7 @@ body{
     top: 13vh;
     border: 1vh solid #1d3f3a;
     background: #1d3f3a;
-    box-shadow: 15vh 15vh 15vh rgba(226, 158, 168);
+    box-shadow: 0vh 0vh 15vh rgba(226, 158, 168);
     border-radius: 10%;
     display: flex;
     justify-content: center;
