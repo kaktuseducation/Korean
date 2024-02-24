@@ -18,8 +18,8 @@ body{
     color: white;
     top: 38%;
     left: 0;
-    width: 100%;
-    height: 10%;
+    width: 40vw;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
