@@ -17,8 +17,8 @@ body{
     font-family: "Garamond";
     font-size: 7vh;
     color: white;
-    top: 5%;
-    left: 50%;
+    top: 0;
+    left: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +39,8 @@ body{
     font-family: "Garamond";
     font-size: 3vh;
     color: white;
+    top: 10%;
+    left: 50%;
     border: 1vh solid #1d3f3a;
     background: #1d3f3a;
     display: flex;
