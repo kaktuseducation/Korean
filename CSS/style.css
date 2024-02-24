@@ -13,9 +13,9 @@ body{
 .header{
     position: absolute;
     font-family: "Garamond";
-    font-size: 3vh;
+    font-size: 4vh;
     color: white;
-    top: 1vh;
+    top: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,9 +35,9 @@ body{
 .start{
     position: absolute;
     font-family: "Garamond";
-    font-size: 5vh;
+    font-size: 6vh;
     color: white;
-    top: 15vh;
+    top: 13vh;
     border: 1vh solid #1d3f3a;
     background: #1d3f3a;
     display: flex;
