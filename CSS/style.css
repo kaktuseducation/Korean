@@ -18,8 +18,8 @@ body{
     color: white;
     top: 38%;
     left: 0;
-    width: 40vw;
-    height: 20vh;
+    width: 4vw;
+    height: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +27,8 @@ body{
 
 .rectangle{
     position: absolute;
-    width: 50vw; 
-    height: 37vh; 
+    width: 5vw; 
+    height: 3vh; 
     background-color: argb(0,0,0);
     border: 1vh solid #e29ea8;
     display: flex;
