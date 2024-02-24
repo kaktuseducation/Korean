@@ -31,6 +31,7 @@ body{
     display: flex;
     width: 40vw;
     height: 20vh;
+    align-items: center;
 }
 
 .start{
@@ -40,10 +41,7 @@ body{
     color: white;
     border: 1vh solid #1d3f3a;
     background: #1d3f3a;
-    top: 20%;
-    left: 50%;
     display: flex;
     width: 5vw;
     height: 3vh;
-    justify-content: center;
 }
