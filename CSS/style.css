@@ -27,8 +27,8 @@ body{
 
 .rectangle{
     position: absolute;
-    width: 250vw; 
-    height: 125vh; 
+    width: 25vw; 
+    height: 12vh; 
     background-color: argb(0,0,0);
     border: 10px solid #e29ea8;
     display: flex;
@@ -42,8 +42,8 @@ body{
     font-size: 300px;
     color: white;
     border-style: solid;
-    width: 100vw;
-    height: 50vh;
+    width: 10vw;
+    height: 5vh;
     background: #1d3f3a;
     top: 42%;
     display: flex;
