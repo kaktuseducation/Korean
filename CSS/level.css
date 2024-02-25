@@ -1,1 +1,33 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0px;
+    background-image: url("../IMG/BackDark.jpg");
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.header{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 4vh;
+    color: white;
+    top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle{
+    position: absolute;
+    background-color: argb(0,0,0);
+    border: 1vh solid #e29ea8;
+    display: flex;
+    width: 90vw;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+}
