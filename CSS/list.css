@@ -4,15 +4,16 @@ body{
     background-image: url("../IMG/BackDark.jpg");
     overflow: hidden;
     top: 50%;
-    left: 4.5%;
+    left: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .above{
     position: absolute;
     font-family: "Garamond";
     font-size: 5vh;
-    top: -50%;
     color: white;
     display: flex;
 }
