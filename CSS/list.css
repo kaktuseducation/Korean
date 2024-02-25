@@ -13,9 +13,9 @@ body{
 .above{
     position: absolute;
     font-family: "Garamond";
-    font-size: 10vh;
+    font-size: 7vh;
     color: white;
-    top: 5vh;
+    top: 1vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body{
     font-family: "Garamond";
     font-size: 10vh;
     color: white;
-    top: 20vh;
+    top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
