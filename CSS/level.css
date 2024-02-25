@@ -10,17 +10,6 @@ body{
     align-items: center;
 }
 
-.header{
-    position: absolute;
-    font-family: "Garamond";
-    font-size: 4vh;
-    color: white;
-    top: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .rectangle{
     position: absolute;
     background-color: argb(0,0,0);
@@ -35,7 +24,7 @@ body{
 .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9{
     position: absolute;
     font-family: "Garamond";
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     border: 0.3vh solid #e29ea8;
     background: #1d3f3a;
