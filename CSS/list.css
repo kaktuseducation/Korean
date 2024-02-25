@@ -6,7 +6,6 @@ body{
     background-image: url("../IMG/BackDark.jpg");
     overflow: hidden;
     display: flex;
-    align-items: center;
 }
 
 .above{
