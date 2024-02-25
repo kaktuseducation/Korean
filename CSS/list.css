@@ -27,7 +27,7 @@ body{
     font-family: "Garamond";
     font-size: 4vh;
     color: white;
-    border: 1vh solid #e29ea8;
+    border: 0.1vh solid #e29ea8;
     background: #1d3f3a;
     border-radius: 10%;
     display: flex;
