@@ -25,7 +25,7 @@ body{
 .btn1, .btn2, .btn3, .btn4, .btn5, .btn6{
     position: absolute;
     font-family: "Garamond";
-    font-size: 2vh;
+    font-size: 3vh;
     color: white;
     border: 0.3vh solid #e29ea8;
     background: #1d3f3a;
@@ -38,31 +38,31 @@ body{
 }
 
 .btn1{
-    top: 2vh;
+    top: 3vh;
     left: 15vw;
 }
 
 .btn2{
-    top: 15vh;
+    top: 17vh;
     left: 15vw;
 }
 
 .btn3{
-    top: 2vh;
+    top: 3vh;
     left: 40vw;
 }
 
 .btn4{
-    top: 15vh;
+    top: 17vh;
     left: 40vw;
 }
 
 .btn5{
-    top: 2vh;
+    top: 3vh;
     left: 65vw;
 }
 
 .btn6{
-    top: 15vh;
+    top: 17vh;
     left: 65vw;
 }
