@@ -31,3 +31,63 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 3vh;
+    color: white;
+    border: 0.3vh solid #e29ea8;
+    background: #1d3f3a;
+    border-radius: 10%;
+    display: flex;
+    width: 10vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1{
+    top: 3vh;
+    left: 6vw;
+}
+
+.btn2{
+    top: 17vh;
+    left: 6vw;
+}
+
+.btn3{
+    top: 3vh;
+    left: 34vw;
+}
+
+.btn4{
+    top: 17vh;
+    left: 34vw;
+}
+
+.btn5{
+    top: 3vh;
+    left: 63vw;
+}
+
+.btn6{
+    top: 17vh;
+    left: 63vw;
+}
+
+.btn7{
+    top: 3vh;
+    left: 102vw;
+}
+
+.btn8{
+    top: 17vh;
+    left: 102vw;
+}
+
+.btn9{
+    top: 3vh;
+    left: 131vw;
+}
