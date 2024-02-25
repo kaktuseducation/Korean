@@ -38,9 +38,8 @@ body{
     font-size: 6vh;
     color: white;
     top: 13vh;
-    border: 1vh solid #1d3f3a;
+    border: 0.3vh solid #e29ea8;
     background: #1d3f3a;
-    box-shadow: 0vh 0vh 7vh rgba(226, 158, 168);
     border-radius: 10%;
     display: flex;
     width: 55vw;
