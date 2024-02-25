@@ -3,6 +3,8 @@ body{
     margin: 0px;
     background-image: url("../IMG/BackDark.jpg");
     overflow: hidden;
+    top: 50%;
+    left: 4.5%;
     display: flex;
 }
 
@@ -25,8 +27,6 @@ body{
 
 .rectangle{
     position: absolute;
-    top: 50%;
-    left: 4.5%;
     background-color: argb(0,0,0);
     border: 1vh solid #e29ea8;
     display: flex;
