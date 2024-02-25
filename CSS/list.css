@@ -36,3 +36,8 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.btn1{
+    top: 13vh;
+    left: 10vh;
+}
