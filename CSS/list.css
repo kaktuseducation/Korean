@@ -25,14 +25,14 @@ body{
 .btn1, .btn2, .btn3, .btn4, .btn5, .btn6{
     position: absolute;
     font-family: "Garamond";
-    font-size: 6vh;
+    font-size: 4vh;
     color: white;
     border: 1vh solid #e29ea8;
     background: #1d3f3a;
     border-radius: 10%;
     display: flex;
-    width: 20vw;
-    height: 20vh;
+    width: 15vw;
+    height: 15vh;
     justify-content: center;
     align-items: center;
 }
