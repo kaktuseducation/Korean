@@ -38,6 +38,31 @@ body{
 }
 
 .btn1{
-    top: 13vh;
+    top: 5vh;
     left: 10vh;
+}
+
+.btn2{
+    top: 10vh;
+    left: 10vh;
+}
+
+.btn3{
+    top: 5vh;
+    left: 20vh;
+}
+
+.btn4{
+    top: 10vh;
+    left: 20vh;
+}
+
+.btn5{
+    top: 5vh;
+    left: 30vh;
+}
+
+.btn6{
+    top: 10vh;
+    left: 30vh;
 }
