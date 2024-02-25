@@ -10,6 +10,28 @@ body{
     align-items: center;
 }
 
+.above{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 10vh;
+    color: white;
+    top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.under{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 10vh;
+    color: white;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .rectangle{
     position: absolute;
     background-color: argb(0,0,0);
