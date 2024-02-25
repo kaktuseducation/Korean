@@ -16,8 +16,6 @@ body{
     font-size: 5vh;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .under{
@@ -27,8 +25,6 @@ body{
     color: white;
     top: 10vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .rectangle{
