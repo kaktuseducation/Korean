@@ -12,6 +12,7 @@ body{
     position: absolute;
     font-family: "Garamond";
     font-size: 5vh;
+    top: 0;
     color: white;
     display: flex;
 }
