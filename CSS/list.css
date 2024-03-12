@@ -14,8 +14,13 @@ body{
     position: absolute;
     font-family: "Garamond";
     font-size: 5vh;
+    top: 0;
+    width: 90vw;
+    height: 30vh;
     color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .under{
@@ -24,7 +29,11 @@ body{
     font-size: 5vh;
     color: white;
     top: 10vh;
+    width: 90vw;
+    height: 30vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rectangle{
