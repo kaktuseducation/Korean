@@ -1,4 +1,4 @@
-LEVEL = {
+LEVELS = {
   'Level 1' : {
     'chapters' : ['alphabet', 'chapter 1', 'chapter 2', 'chapter 3', 'chapter 4', 'chapter 5', 'chapter 6', 'chapter 7', 'chapter 8'],
     'alphabet' : ['lesson 1', 'lesson 2', 'lesson 3'],
