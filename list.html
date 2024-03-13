@@ -12,7 +12,7 @@
         <p class = "above"> Choose level </p>
         
         <div class = "rectangle">
-            <button class = "btn1" onclick = "golvl()"> <p> Level <br> 1 </p> </button>
+            <button class = "btn1" onclick = "golvl()"> <p> L</p> </button>
             <button class = "btn2" onclick = "golvl()"> <p> Level <br> 2 </p> </button>
             <button class = "btn3" onclick = "golvl()"> <p> Level <br> 3 </p> </button>
             <button class = "btn4" onclick = "golvl()"> <p> Level <br> 4 </p> </button>
@@ -24,6 +24,11 @@
 
     <script src = 'JS/dictionary.js'></script>
     <script>
+        localStorage.setItem('ref', 'list.html');
+        for i in range(7){
+            'btn' + i = document.querySelector('.btn' + i)
+        }
+        
         LEVELS = document.querySelector(".list");
         for i in range(7){
             for (const level in LEVELS){
