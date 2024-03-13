@@ -25,18 +25,14 @@
     <script src = 'JS/dictionary.js'></script>
     <script>
         localStorage.setItem('ref', 'list.html');
-        for i in range(7){
-            'btn' + i = document.querySelector('.btn' + i)
-        }
+        rectangle = document.querySelector('.rectangle')
         
         LEVELS = document.querySelector(".list");
-        for i in range(7){
-            for (const level in LEVELS){
-                child = document.createElement('button');
-                child.textContent = level;
-                LIST.appendChild(child);
-                button.className = 'btn' + i;
-            }
+        for (const level in LEVELS){
+            child = document.createElement('button');
+            child.textContent = level;
+            LIST.appendChild(child);
+            button.className = 'btn';
         }
         
         function golvl(){document.location = 'level.html'}
