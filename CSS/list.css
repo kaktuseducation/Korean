@@ -1,41 +1,25 @@
 body{
     position: absolute;
+    height: 100%;
+    width: 100%;
     margin: 0px;
     background-image: url("../IMG/BackDark.jpg");
     overflow: hidden;
-    top: 50%;
-    left: 50%;
-/*     display: flex; */
-/*     align-items: center;
-    justify-content: center; */
 }
 
 .above{
     position: absolute;
     font-family: "Garamond";
     font-size: 5vh;
-    top: -10vh;
+    top: 2%;
     width: 90vw;
-    height: 30vh;
+    height: 20vh;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.under{
-    position: absolute;
-    font-family: "Garamond";
-    font-size: 5vh;
-    color: white;
-    top: 10vh;
-    width: 90vw;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .rectangle{
@@ -45,10 +29,22 @@ body{
     display: flex;
     width: 90vw;
     height: 30vh;
-    align-items: center;
-    justify-content: center;
+    left: calc(5% - 1vh);
+    top: 30%;
 }
 
+.under{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    color: white;
+    top: 60%;
+    width: 90vw;
+    height: 30vh;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+}
 
 .btn1, .btn2, .btn3, .btn4, .btn5, .btn6{
     position: absolute;
@@ -64,7 +60,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .btn1{
     top: 3vh;
     left: 6vw;
