@@ -6,23 +6,35 @@
         <title> KOREAN </title>
         <link rel = "stylesheet" type = "text/css" href = "CSS/font.css">
         <link rel = "stylesheet" href = "CSS/list.css">
+
+        <script src="JS/dictionary.js"></script>
     </head>
     
     <body>
         <p class = "above"> Choose level </p>
         
-        <div class = "rectangle">
-            <button class = "btn1" onclick = "golvl()"> <p> Level <br> 1 </p> </button>
-            <button class = "btn2" onclick = "golvl()"> <p> Level <br> 2 </p> </button>
-            <button class = "btn3" onclick = "golvl()"> <p> Level <br> 3 </p> </button>
-            <button class = "btn4" onclick = "golvl()"> <p> Level <br> 4 </p> </button>
-            <button class = "btn5" onclick = "golvl()"> <p> Level <br> 5 </p> </button>
-            <button class = "btn6" onclick = "golvl()"> <p> Level <br> 6 </p> </button>
+        <div class = "grid-container" id = "levelContainer">
+            <!-- Уровни будут созданы динамически -->
         </div>
         
     </body>
+
+    <script>
+        var levelContainer = document.getElementById('levelContainer');
+
+        for (var level in LEVELS) {
+            (function(level) {
+                var button = document.createElement('button');
+                button.className = 'grid-item';
+                button.onclick = function() {
+                    // сохраняем выбранный уровень в localStorage или в другом месте
+                    localStorage.setItem('selectedLevel', level);
+                    document.location = 'chapter.html';
+                };
+                button.innerHTML = '<p>' + level.replace(' ', '<br>') + '</p>';
+                levelContainer.appendChild(button);
+            })(level);
+        }
         
-        function golvl(){document.location = 'level.html'}
     </script>
-    
 </html>
