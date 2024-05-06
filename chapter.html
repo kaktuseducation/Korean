@@ -6,26 +6,43 @@
         <title> KOREAN </title>
         <link rel = "stylesheet" type = "text/css" href = "CSS/font.css">
         <link rel = "stylesheet" href = "CSS/level.css">
+        
+        <script src = "JS/dictionary.js"></script> <!-- Импорт словаря -->
     </head>
     
     <body>
-
         <p class = "above"> Choose chapter </p>
-
-         <div class = "rectangle">
-             <button class = "btn1" onclick = "chapter()"> <p> alphabet </p> </button>
-             <button class = "btn2" onclick = "chapter()"> <p> chapter <br> 1 </p> </button>
-             <button class = "btn3" onclick = "chapter()"> <p> chapter <br> 2 </p> </button>
-             <button class = "btn4" onclick = "chapter()"> <p> chapter <br> 3 </p> </button>
-             <button class = "btn5" onclick = "chapter()"> <p> chapter <br> 4 </p> </button>
-             <button class = "btn6" onclick = "chapter()"> <p> chapter <br> 5 </p> </button>
-             <button class = "btn7" onclick = "chapter()"> <p> chapter <br> 6 </p> </button>
-             <button class = "btn8" onclick = "chapter()"> <p> chapter <br> 7 </p> </button>
-             <button class = "btn9" onclick = "chapter()"> <p> chapter <br> 8 </p> </button>
-         </div>
+        
+        <div class = "rectangle" id = "chapterContainer">
+            <!-- Главы будут созданы динамически -->
+        </div>
+        
     </body>
 
     <script>
-        function chapter(){document.location = 'chapter.html'}
+        var selectedLevel = localStorage.getItem('selectedLevel');
+
+        // Получаем главы из выбранного уровня
+        var chapters = LEVELS[selectedLevel];
+
+        var chapterContainer = document.getElementById('chapterContainer');
+
+        // Получаем массив ключей объекта chapters
+        var chapterKeys = Object.keys(chapters);
+
+        // Используем forEach для перебора глав в объекте
+        chapterKeys.forEach(function(chapter, index) {
+            var chapterObj = chapters[chapter]
+            var button = document.createElement('button');
+
+            button.className = 'btn' + (index + 1);
+            button.onclick = function() {
+                // сохраняем выбранную главу в localStorage или в другом месте
+                localStorage.setItem('selectedChapter', chapter);
+                document.location = 'lesson.html';
+            };
+            button.innerHTML = '<p>' + chapterObj["name"].replace(' ', '<br>') + '</p>';
+            chapterContainer.appendChild(button);
+        });
     </script>
 </html>
