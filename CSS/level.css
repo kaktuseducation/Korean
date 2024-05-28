@@ -22,26 +22,21 @@ body{
     transform: translateX(-50%);
 }
 
-.grid-container {
+.rectangle{
     position: absolute;
     background-color: argb(0,0,0);
     border: 1vh solid #e29ea8;
-    display: grid;
-    column-gap: 5vw;
-    row-gap: 5vh;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
+    display: flex;
     width: 90vw;
-    height: 30vh;
+    height: 42vh;
     left: calc(5% - 1vh);
     top: 30%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .grid-item {
+}
+
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6{
+    position: absolute;
     font-family: "Garamond";
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     border: 0.3vh solid #e29ea8;
     background: #1d3f3a;
@@ -51,5 +46,34 @@ body{
     height: 10vh;
     justify-content: center;
     align-items: center;
-    text-align: center;
-  }
+}
+
+.btn1{
+    top: 6vh;
+    left: 6vw;
+}
+
+.btn2{
+    top: 6vh;
+    left: 34vw;
+}
+
+.btn3{
+    top: 6vh;
+    left: 62vw;
+}
+
+.btn4{
+    top: 24vh;
+    left: 6vw;
+}
+
+.btn5{
+    top: 24vh;
+    left: 34vw;
+}
+
+.btn6{
+    top: 24vh;
+    left: 62vw;
+}

@@ -1,0 +1,59 @@
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-image: url("../IMG/BackDark.jpg");
+    overflow: hidden;
+}
+
+.above{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    top: 2%;
+    width: 90vw;
+    height: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tbl{
+    border-collapse: collapse;
+    table-layout:fixed;
+
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    max-width: fit-content;
+    top: 40%;
+    width: 90vw;
+    height: 20vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+td {
+    padding: 0px;
+    margin: 0 0 0 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+  /* tbody{
+    padding: 0px;
+    margin: 0 0 0 0;
+    
+  } */
+/* tr {
+padding: 0px;
+    margin: 0 0 0 0;
+
+} */
