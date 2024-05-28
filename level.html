@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "ru">
+<html lang = "eng">
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
@@ -7,13 +7,13 @@
         <link rel = "stylesheet" type = "text/css" href = "CSS/font.css">
         <link rel = "stylesheet" href = "CSS/level.css">
 
-        <script src="JS/dictionary.js"></script>
+        <script src = "JS/dictionary.js"></script>
     </head>
     
     <body>
         <p class = "above"> Choose level </p>
         
-        <div class = "grid-container" id = "levelContainer">
+        <div class = "rectangle" id = "levelContainer">
             <!-- Уровни будут созданы динамически -->
         </div>
         
@@ -21,20 +21,22 @@
 
     <script>
         var levelContainer = document.getElementById('levelContainer');
+        var levels = Object.keys(LEVELS); // Получаем массив ключей из объекта LEVELS
 
-        for (var level in LEVELS) {
-            (function(level) {
+        for (var i = 0; i < levels.length; i++) {
+            (function(level, index) {
                 var button = document.createElement('button');
-                button.className = 'grid-item';
+                // button.className = 'grid-item';
+
+                button.className = 'btn' + (index + 1);
                 button.onclick = function() {
                     // сохраняем выбранный уровень в localStorage или в другом месте
                     localStorage.setItem('selectedLevel', level);
-                    document.location = 'chapter.html';
+                    document.location = 'chapters_level' + (index + 1) + '.html';
                 };
                 button.innerHTML = '<p>' + level.replace(' ', '<br>') + '</p>';
                 levelContainer.appendChild(button);
-            })(level);
+            })(levels[i], i);
         }
-        
     </script>
 </html>
