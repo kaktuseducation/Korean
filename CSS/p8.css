@@ -28,67 +28,54 @@ body{
     border: 1vh solid #e29ea8;
     display: flex;
     width: 90vw;
-    height: 42vh;
+    height: 30vh;
     left: calc(5% - 1vh);
     top: 30%;
 }
 
-.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9{
+.about{
     position: absolute;
     font-family: "Garamond";
-    font-size: 2.5vh;
+    font-size: 5vh;
+    width: 90vw;
+    height: 20vh;
     color: white;
+    display: flex;
+    left: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.next{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    color: white;
+    bottom: 15%;
+    right: 15%;
     border: 0.3vh solid #e29ea8;
     background: #1d3f3a;
     border-radius: 10%;
     display: flex;
-    width: 22vw;
-    height: 10vh;
+    width: 20vh;
+    height: 6vh;
     justify-content: center;
     align-items: center;
 }
 
-.btn1{
-    top: 3vh;
-    left: 6vw;
-}
-
-.btn2{
-    top: 3vh;
-    left: 34vw;
-}
-
-.btn3{
-    top: 3vh;
-    left: 62vw;
-}
-
-.btn4{
-    top: 16vh;
-    left: 6vw;
-}
-
-.btn5{
-    top: 16vh;
-    left: 34vw;
-}
-
-.btn6{
-    top: 16vh;
-    left: 62vw;
-}
-
-.btn7{
-    top: 29vh;
-    left: 6vw;
-}
-
-.btn8{
-    top: 29vh;
-    left: 34vw;
-}
-
-.btn9{
-    top: 29vh;
-    left: 62vw;
+.previous{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    color: white;
+    bottom: 15%;
+    left: 15%;
+    border: 0.3vh solid #e29ea8;
+    background: #1d3f3a;
+    border-radius: 10%;
+    display: flex;
+    width: 20vh;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
 }

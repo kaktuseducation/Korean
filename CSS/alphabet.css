@@ -22,73 +22,47 @@ body{
     transform: translateX(-50%);
 }
 
-.rectangle{
-    position: absolute;
-    background-color: argb(0,0,0);
-    border: 1vh solid #e29ea8;
-    display: flex;
-    width: 90vw;
-    height: 42vh;
-    left: calc(5% - 1vh);
-    top: 30%;
-}
-
-.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9{
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6{
     position: absolute;
     font-family: "Garamond";
-    font-size: 2.5vh;
+    font-size: 5vh;
     color: white;
     border: 0.3vh solid #e29ea8;
     background: #1d3f3a;
     border-radius: 10%;
     display: flex;
-    width: 22vw;
+    width: 66vw;
     height: 10vh;
     justify-content: center;
     align-items: center;
 }
 
 .btn1{
-    top: 3vh;
-    left: 6vw;
+    top: 23vh;
+    left: calc(50% - 33vw);
 }
 
 .btn2{
-    top: 3vh;
-    left: 34vw;
+    top: 35vh;
+    left: calc(50% - 33vw);
 }
 
 .btn3{
-    top: 3vh;
-    left: 62vw;
+    top: 47vh;
+    left: calc(50% - 33vw);
 }
 
 .btn4{
-    top: 16vh;
-    left: 6vw;
+    top: 59vh;
+    left: calc(50% - 33vw);
 }
 
 .btn5{
-    top: 16vh;
-    left: 34vw;
+    top: 71vh;
+    left: calc(50% - 33vw);
 }
 
 .btn6{
-    top: 16vh;
-    left: 62vw;
-}
-
-.btn7{
-    top: 29vh;
-    left: 6vw;
-}
-
-.btn8{
-    top: 29vh;
-    left: 34vw;
-}
-
-.btn9{
-    top: 29vh;
-    left: 62vw;
+    top: 83vh;
+    left: calc(50% - 33vw);
 }

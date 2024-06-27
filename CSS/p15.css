@@ -1,0 +1,234 @@
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-image: url("../IMG/BackDark.jpg");
+    overflow: hidden;
+}
+
+.header{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    top: 2%;
+    width: 90vw;
+    height: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rectangle{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    background-color: argb(0,0,0);
+    border: 1vh solid #e29ea8;
+    display: flex;
+    width: 50vw;
+    height: 18vh;
+    left: calc(50% - 25vw);
+    top: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer{
+    position: absolute;
+    background-color: rgb(255,255,255);
+    border: 1vh solid #ffffff;
+    display: flex;
+    width: 50vw;
+    height: 6vh;
+    left: calc(50% - 25vw);
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.next{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    color: white;
+    bottom: 15%;
+    right: 15%;
+    border: 0.3vh solid #e29ea8;
+    background: #1d3f3a;
+    border-radius: 10%;
+    display: flex;
+    width: 20vh;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    color: white;
+    bottom: 15%;
+    left: 15%;
+    border: 0.3vh solid #e29ea8;
+    background: #1d3f3a;
+    border-radius: 10%;
+    display: flex;
+    width: 20vh;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    color: #e29ea8;
+    border: 0.3vh solid #e29ea8;
+    background: #1d3f3a;
+    border-radius: 10%;
+    display: flex;
+    width: 6vh;
+    height: 6vh;
+    bottom: 15%;
+    left: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    color: #e29ea8;
+    border: 0.3vh solid #e29ea8;
+    background: #1d3f3a;
+    border-radius: 10%;
+    display: flex;
+    width: 6vh;
+    height: 6vh;
+    bottom: 15%;
+    right: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.trans{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.length{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    top: 40%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 3vh;
+    color: white;
+    border: 0.3vh solid #e29ea8;
+    background: #1d3f3a;
+    border-radius: 10%;
+    display: flex;
+    width: 6vh;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1{
+    bottom: 30%;
+    left: 15%;
+}
+
+.btn2{
+    bottom: 30%;
+    left: calc(27% - 3vh);
+}
+
+.btn3{
+    bottom: 30%;
+    left: calc(38% - 3vh);
+}
+
+.btn4{
+    bottom: 30%;
+    left: calc(50% - 3vh);
+}
+
+.btn5{
+    bottom: 30%;
+    right: calc(38% - 3vh);
+}
+
+.btn6{
+    bottom: 30%;
+    right: calc(27% - 3vh);
+}
+
+.btn7{
+    bottom: 30%;
+    right: 15%;
+}
+
+.user{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 5vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 3vh;
+    color: white;
+    bottom: 42%;
+    right: 15%;
+    border: 0.3vh solid #e29ea8;
+    background: #1d3f3a;
+    border-radius: 10%;
+    display: flex;
+    width: 10vh;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.erase{
+    position: absolute;
+    font-family: "Garamond";
+    font-size: 3vh;
+    color: white;
+    bottom: 50%;
+    right: 15%;
+    border: 0.3vh solid #e29ea8;
+    background: #1d3f3a;
+    border-radius: 10%;
+    display: flex;
+    width: 10vh;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}

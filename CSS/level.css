@@ -7,7 +7,7 @@ body{
     overflow: hidden;
 }
 
-.above{
+.header{
     position: absolute;
     font-family: "Garamond";
     font-size: 5vh;
