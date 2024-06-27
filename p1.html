@@ -6,96 +6,35 @@
         <title> KOREAN </title>
         <link rel = "stylesheet" type = "text/css" href = "CSS/font.css">
         <link rel = "stylesheet" href = "CSS/p1.css">
-        
-        <script src = "JS/dictionary.js"></script> <!-- Импорт словаря -->
     </head>
     
     <body>
-        <p class = "above"> Consonants </p>
+        <p class = "header"> Lesson 1 </p>
         
-        <table class = "tbl">
-          <tbody>
-            <tr>
-              <td> Letter </td>
-              <td> ㄱ </td>
-              <td> ㄴ </td>
-              <td> ㄷ </td>
-              <td> ㄹ </td>
-              <td> ㅁ </td>
-              <td> ㅂ </td>
-              <td> ㅅ </td>
-              <td> ㅇ </td>
-              <td> ㅈ </td>
-              <td> ㅎ </td>
-            </tr>
-            <tr>
-              <td> Sound value </td>
-              <td> [k/g] </td>
-              <td> [n] </td>
-              <td> [t/d] </td>
-              <td> [r/l] </td>
-              <td> [m] </td>
-              <td> [p/b] </td>
-              <td> [s] </td>
-              <td> [Ø/ŋ] </td>
-              <td> [t∫/j] </td>
-              <td> [h] </td>
-            </tr>
-            <tr>
-              <td> Letter </td>
-              <td> ㅋ </td>
-              <td>  </td>
-              <td> ㅌ </td>
-              <td>  </td>
-              <td>  </td>
-              <td> ㅍ </td>
-              <td>  </td>
-              <td>  </td>
-              <td> ㅊ </td>
-              <td>  </td>
-            </tr>
-            <tr>
-              <td> Sound value </td>
-              <td> [kh] </td>
-              <td>  </td>
-              <td> [th] </td>
-              <td>  </td>
-              <td>  </td>
-              <td> [ph] </td>
-              <td>  </td>
-              <td>  </td>
-              <td> [t∫h] </td>
-              <td>  </td>
-            </tr>
-            <tr>
-              <td> Letter </td>
-              <td> ㄲ </td>
-              <td>  </td>
-              <td> ㄸ </td>
-              <td>  </td>
-              <td>  </td>
-              <td> ㅃ </td>
-              <td> ㅆ </td>
-              <td>  </td>
-              <td> ㅉ </td>
-              <td>  </td>
-            </tr>
-            <tr>
-              <td> Sound value </td>
-              <td> [k'] </td>
-              <td>  </td>
-              <td> [t'] </td>
-              <td>  </td>
-              <td>  </td>
-              <td> [p'] </td>
-              <td> [s'] </td>
-              <td>  </td>
-              <td> [t∫'] </td>
-              <td>  </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class = "rectangle">
+          <table class = "tbl">
+            <tbody>
+              <tr>
+                <td> Letters: </td>
+                <td> ㅏ </td>
+                <td> ㅓ </td>
+                <td> ㅗ </td>
+                <td> ㅜ </td>
+                <td> ㅡ </td>
+                <td> ㅣ </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <button class = "next" onclick = "next()"> next </button>
+
+        <button class = "previous" onclick = "previous()"> previous </button>
         
     </body>
+
+    <script> function previous(){document.location = 'alphabet.html'} </script>
+
+    <script> function next(){document.location = 'p2.html'} </script>
 
 </html>

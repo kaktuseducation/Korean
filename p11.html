@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title> KOREAN </title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS/font.css">
+        <link rel = "stylesheet" href = "CSS/p11.css">
+
+        <script src = "JS/word.js"></script>
+    </head>
+    
+    <body>
+        <p class = "header"> Lesson 1 </p>
+
+        <div class = "rectangle">
+
+            <p id = "length" class = "length"> </p>
+            
+            <p id = "word" class = "word"> </p>
+
+            <p id = "read" class = "read"> </p>
+
+            <p id = "trans" class = "trans"> </p>
+
+            <button id = "left" class = "left" onclick = "left()"> ← </button> 
+
+            <button id = "right" class = "right" onclick = "right()"> → </button>
+        </div>
+
+        <button class = "next" onclick = "next()"> next </button>
+
+        <button class = "previous" onclick = "previous()"> previous </button>
+            
+    </body>
+
+    <script>
+        function previous(){document.location = 'p10.html'}
+
+        function next(){document.location = 'p12.html'}
+
+        //словарь с массивом
+        const data = WORD['Lesson 1']
+
+        // Инициализируем текущий индекс
+        let currentIndex = 0;
+
+        // Функция для обновления отображаемого слова
+        function updateDisplayedWord() {
+            const currentWordElement = document.getElementById('word');
+            const currentReadElement = document.getElementById('read');
+            const currentTransElement = document.getElementById('trans');
+            const currentIndexElement = document.getElementById('length');
+
+            currentWordElement.textContent = data[currentIndex].word;
+            currentReadElement.textContent = data[currentIndex].read;
+            currentTransElement.textContent = data[currentIndex].trans;
+            currentIndexElement.textContent = (currentIndex + 1)+" / "+data.length;
+        }
+
+        // Обработчик для кнопки "предыдущее слово"
+        document.getElementById('left').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateDisplayedWord();
+            }
+        });
+
+        // Обработчик для кнопки "следующее слово"
+        document.getElementById('right').addEventListener('click', () => {
+            if (currentIndex < data.length - 1) {
+                currentIndex++;
+                updateDisplayedWord();
+            }
+        });
+
+        // Инициализация начального значения
+        document.addEventListener('DOMContentLoaded', (event) => {
+            updateDisplayedWord();
+        });
+    </script>
+
+</html>

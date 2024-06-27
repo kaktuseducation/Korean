@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title> KOREAN </title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS/font.css">
+        <link rel = "stylesheet" href = "CSS/p15.css">
+
+        <script src = "JS/Hangul/hangul.js"></script>
+        <script src = "JS/word.js"></script>
+    </head>
+    
+    <body>
+        <p class = "header"> Lesson 1 </p>
+
+        <div class = "rectangle">
+
+            <p id = "length" class = "length"> </p>
+            
+            <p id = "trans" class = "trans"> </p>
+
+            <button id = "left" class = "left" onclick = "left()"> ← </button> 
+
+            <button id = "right" class = "right" onclick = "right()"> → </button>
+        </div>
+
+        <div id = "answer" class = answer> 
+            <p id = "user" class = "user">  </p>
+        </div>
+
+        <button id = "erase" class = "erase"> erase </button>
+
+        <button id = "check" class = "check"> check </button>
+
+        <button id = "btn1" class = "btn1">ㅇ</button>
+        <button id = "btn2" class = "btn2">ㅏ</button>
+        <button id = "btn3" class = "btn3">ㅓ</button>
+        <button id = "btn4" class = "btn4">ㅗ</button>
+        <button id = "btn5" class = "btn5">ㅜ</button>
+        <button id = "btn6" class = "btn6">ㅡ</button>
+        <button id = "btn7" class = "btn7">ㅣ</button>
+
+        <button class = "next" onclick = "next()"> next </button>
+
+        <button class = "previous" onclick = "previous()"> previous </button>
+            
+    </body>
+
+    <script>
+        function previous(){document.location = 'p14.html'}
+
+        function next(){document.location = 'p16.html'}
+
+        //словарь с массивом
+        const data = WORD['Lesson 1']
+
+        // Инициализируем текущий индекс
+        let currentIndex = 0;
+
+        // Функция для обновления отображаемого слова
+        function updateDisplayedWord() {
+            const currentWordElement = document.getElementById('trans');
+            const currentIndexElement = document.getElementById('length');
+
+            currentWordElement.textContent = data[currentIndex].trans;
+            currentIndexElement.textContent = (currentIndex + 1)+" / "+data.length;
+        }
+        
+        // Обработчики букв для 7 кнопок
+        let symbols = [];
+        for (let i = 1; i<=7; i++) {
+            document.getElementById('btn'+i).addEventListener('click', () => {
+                let data = document.getElementById('btn'+i).textContent;
+                symbols.push(data);
+
+                const combined = Hangul.assemble(symbols);
+                document.getElementById('user').textContent = combined;
+            });
+        }
+
+        // Стирание поля ввода
+        document.getElementById('erase').addEventListener('click', () => {
+            symbols.pop();
+            
+            const combined = Hangul.assemble(symbols);
+            document.getElementById('user').textContent = combined;
+        });
+
+        // Проверка поля ввода
+        document.getElementById('check').addEventListener('click', () => {
+            let user = document.getElementById('user').textContent;
+            let trans = document.getElementById('trans').textContent;
+            let isCorrect = isCorrectWord(user, trans, data)
+
+            if(isCorrect == true){
+                alert("Well done!!!");
+                return
+            }
+            
+            alert("Try again");
+        });
+
+        // Обработчик для кнопки "предыдущее слово"
+        document.getElementById('left').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateDisplayedWord();
+            }
+        });
+
+        // Обработчик для кнопки "следующее слово"
+        document.getElementById('right').addEventListener('click', () => {
+            if (currentIndex < data.length - 1) {
+                currentIndex++;
+                updateDisplayedWord();
+            }
+        });
+
+        // Инициализация начального значения
+        document.addEventListener('DOMContentLoaded', (event) => {
+            updateDisplayedWord();
+        });
+    </script>
+
+</html>

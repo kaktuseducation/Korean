@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title> KOREAN </title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS/font.css">
+        <link rel = "stylesheet" href = "CSS/p17.css">
+
+        <script src = "JS/drawing.js" defer></script>
+    </head>
+    
+    <body>
+        <p class = "above"> Lesson 1 </p>
+        <p id = "result"> </p>
+
+        <canvas id = "canvas" class = "canvas"> </canvas>
+
+        <button id = "check" class = "check"> check </button>
+
+        <button id = "erase" class = "erase"> erase </button>
+
+        <button class = "next" onclick = "next()"> next </button>
+
+        <button class = "previous" onclick = "previous()"> previous </button>
+            
+    </body>
+
+    <script> 
+        function previous(){document.location = 'p16.html'} 
+        
+        function next(){document.location = 'p18.html'} 
+
+        
+        document.getElementById('check').addEventListener('click', async function() {
+            const imagePath = "model/temp/temp.png";
+            const dataURL = canvas.toDataURL('image/png');
+
+            
+            try {
+                const formData = new FormData();
+                formData.append('image', dataURL);
+    
+                const responseSave = await fetch('http://127.0.0.1:5000/save-image', {
+                    method: 'POST',
+                    body: formData
+                });
+    
+                if (!responseSave.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                // приход сообщения об успешном сохранении
+                const resultSave = await responseSave.json();
+                
+    
+
+                const responsePredict = await fetch('http://127.0.0.1:5000/predict', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({ "image_path": imagePath })
+                });
+
+                if (!responsePredict.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+
+
+                const resultPredict = await responsePredict.json();
+                // добавить ID куда выводим поле
+                document.getElementById('result').textContent = `Prediction: ${resultPredict.prediction}`;
+
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while making the prediction.');
+            }
+        });
+
+    </script>
+
+</html>

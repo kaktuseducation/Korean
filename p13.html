@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title> KOREAN </title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS/font.css">
+        <link rel = "stylesheet" href = "CSS/p13.css">
+
+        <script src = "JS/word.js"></script>
+    </head>
+    
+    <body>
+        <p class = "header"> Lesson 1 </p>
+
+        <div class = "rectangle">
+
+            <p id = "length" class = "length"> </p>
+            
+            <p id = "trans" class = "trans"> </p>
+
+            <button id = "left" class = "left" onclick = "left()"> ← </button> 
+
+            <button id = "right" class = "right" onclick = "right()"> → </button>
+        </div>
+
+        <button id = "ans1" class = "ans1"> </button>
+            
+        <button id = "ans2" class = "ans2"> </button>
+
+        <button id = "ans3" class = "ans3"> </button>
+
+        <button id = "ans4" class = "ans4"> </button>
+
+        <button class = "next" onclick = "next()"> next </button>
+
+        <button class = "previous" onclick = "previous()"> previous </button>
+            
+    </body>
+
+    <script>
+        function previous(){document.location = 'p12.html'}
+
+        function next(){document.location = 'p14.html'}
+
+        //словарь с массивом
+        const data = WORD['Lesson 1']
+
+        // Инициализируем текущий индекс
+        let currentIndex = 0;
+
+        // Функция для обновления отображаемого слова
+        function updateDisplayedWord() {
+            const currentWordElement = document.getElementById('trans');
+            const ans1 = document.getElementById('ans1');
+            const ans2 = document.getElementById('ans2');
+            const ans3 = document.getElementById('ans3');
+            const ans4 = document.getElementById('ans4');
+            const currentIndexElement = document.getElementById('length');
+
+            currentWordElement.textContent = data[currentIndex].trans;
+            currentIndexElement.textContent = (currentIndex + 1)+" / "+data.length;
+
+            if (currentIndex == 0){
+                ans1.textContent = data[currentIndex].word; //0
+                ans2.textContent = data[currentIndex + 1].word; //1
+                ans3.textContent = data[currentIndex + 2].word; //2
+                ans4.textContent = data[currentIndex + 3].word; //3
+            }
+
+            if (currentIndex == 1){
+                ans1.textContent = data[currentIndex + 1].word; //2
+                ans2.textContent = data[currentIndex].word; //1
+                ans3.textContent = data[currentIndex + 2].word; //3
+                ans4.textContent = data[currentIndex + 3].word; //4
+            }
+
+            if (currentIndex == 2){
+                ans1.textContent = data[currentIndex + 1].word; //3
+                ans2.textContent = data[currentIndex + 2].word; //4
+                ans3.textContent = data[currentIndex].word; //2
+                ans4.textContent = data[currentIndex - 1].word; //1
+            }
+
+            if (currentIndex == 3){
+                ans1.textContent = data[currentIndex + 1].word; //4
+                ans2.textContent = data[currentIndex - 1].word; //2
+                ans3.textContent = data[currentIndex - 2].word; //1
+                ans4.textContent = data[currentIndex].word; //3
+            }
+
+            if (currentIndex == 4){
+                ans1.textContent = data[currentIndex].word; //4
+                ans2.textContent = data[currentIndex - 1].word; //3
+                ans3.textContent = data[currentIndex - 2].word; //2
+                ans4.textContent = data[currentIndex - 3].word; //1
+            }
+        }
+        
+        function isCorrectWord(currentWord, transFind, array) {
+            for (let i = 0; i < array.length; i++) {
+                // если перевод тот который мы ищем и word у кнопки и у объекта совпадает
+                if (array[i].trans == transFind && array[i].word == currentWord) {
+                    alert("Well done!")
+                    return true
+                }
+            }
+            alert("Try again!")
+            return false;
+        }
+
+        document.getElementById('ans1').addEventListener('click', () => {
+            isCorrectWord(ans1.textContent, data[currentIndex].trans, data)
+        });
+
+        document.getElementById('ans2').addEventListener('click', () => {
+            isCorrectWord(ans2.textContent, data[currentIndex].trans, data)
+        });
+
+        document.getElementById('ans3').addEventListener('click', () => {
+            isCorrectWord(ans3.textContent, data[currentIndex].trans, data)
+        });
+
+        document.getElementById('ans4').addEventListener('click', () => {
+            isCorrectWord(ans4.textContent, data[currentIndex].trans, data)
+        });
+
+        // Обработчик для кнопки "предыдущее слово"
+        document.getElementById('left').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateDisplayedWord();
+            }
+        });
+
+        // Обработчик для кнопки "следующее слово"
+        document.getElementById('right').addEventListener('click', () => {
+            if (currentIndex < data.length - 1) {
+                currentIndex++;
+                updateDisplayedWord();
+            }
+        });
+
+        // Инициализация начального значения
+        document.addEventListener('DOMContentLoaded', (event) => {
+            updateDisplayedWord();
+        });
+    </script>
+
+</html>
